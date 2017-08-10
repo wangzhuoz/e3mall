@@ -45,6 +45,20 @@ var E3 = {
 	formatPrice : function(val,row){
 		return (val/1000).toFixed(2);
 	},
+	//=====================================================
+//	// 格式化价格
+//	formatCid : function(val,row){
+//		$.ajax({
+//			   type: "POST",
+//			   url: "/item/cid",
+//			   data: cid=val,
+//			   success: function(d){
+//			     alert( "Data Saved: " + d );
+//			     return d;
+//			   }
+//			}); 
+//	},
+	//=====================================================
 	// 格式化商品的状态
 	formatItemStatus : function formatStatus(val,row){
         if (val == 1){

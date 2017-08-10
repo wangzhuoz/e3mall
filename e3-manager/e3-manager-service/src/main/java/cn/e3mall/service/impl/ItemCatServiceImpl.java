@@ -37,6 +37,12 @@ public class ItemCatServiceImpl implements ItemCatService {
 		
 		return list2;
 	}
+
+	@Override
+	public TbItemCat getItemCat(long cid) {
+		TbItemCat itemCat = itemCatMapper.selectByPrimaryKey(cid);
+		return itemCat;
+	}
 	
 	
 	
